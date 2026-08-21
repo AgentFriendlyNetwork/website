@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
-import { GitPullRequest, Mail, Shield, ArrowUpRight, Terminal, Users } from "lucide-react";
+import Link from "next/link";
+import { GitPullRequest, Mail, Shield, ArrowUpRight, Terminal, Users, HeartHandshake, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Join the Network & Participate",
@@ -12,6 +13,7 @@ export default function JoinPage() {
     {
       title: "Individual Developers & Researchers",
       icon: Users,
+      feeNotice: "100% Free & Open",
       description:
         "Participate in technical working groups, propose new RFCs, debate specifications, and implement agent-friendly developer tools.",
       actionText: "Join via GitHub Discussions",
@@ -25,6 +27,7 @@ export default function JoinPage() {
     {
       title: "Open Source Projects",
       icon: Terminal,
+      feeNotice: "100% Free & Open",
       description:
         "Get your CLI tool, API framework, or MCP server indexed in the official AFN ecosystem directory and obtain standard compliance verification.",
       actionText: "Submit Project Issue",
@@ -38,6 +41,7 @@ export default function JoinPage() {
     {
       title: "Companies & AI Platforms",
       icon: Shield,
+      feeNotice: "Corporate Partner / Sponsor",
       description:
         "Collaborate on industrial agent interoperability, sponsor testbed infrastructure, and align enterprise APIs with AFN standards.",
       actionText: "Contact Steering Committee",
@@ -76,13 +80,19 @@ export default function JoinPage() {
               className="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 flex flex-col justify-between hover:border-zinc-700 transition-colors space-y-6"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded border border-zinc-700 bg-zinc-800 flex items-center justify-center text-zinc-200">
-                    <Icon className="w-4 h-4" />
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded border border-zinc-700 bg-zinc-800 flex items-center justify-center text-zinc-200">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <h2 className="font-semibold text-zinc-100 text-base">
+                      {p.title}
+                    </h2>
                   </div>
-                  <h2 className="font-semibold text-zinc-100 text-base">
-                    {p.title}
-                  </h2>
+                </div>
+
+                <div className="inline-block px-2 py-0.5 rounded text-[10px] font-mono bg-zinc-800 text-zinc-300 border border-zinc-700/50">
+                  {p.feeNotice}
                 </div>
 
                 <p className="text-xs text-zinc-400 leading-relaxed">
@@ -120,7 +130,30 @@ export default function JoinPage() {
         })}
       </div>
 
-      {/* 3. GitHub Issue Submission Template */}
+      {/* 3. Financial Support & Treasury Callout */}
+      <div className="border border-zinc-800 bg-zinc-900/30 rounded-xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div className="space-y-2 max-w-xl">
+          <div className="flex items-center gap-2 font-mono text-xs text-zinc-400">
+            <HeartHandshake className="w-4 h-4 text-zinc-300" />
+            <span>FINANCIAL SUSTAINABILITY & TREASURY</span>
+          </div>
+          <h3 className="text-lg font-bold text-white">
+            Support the Agent-Friendly Internet
+          </h3>
+          <p className="text-xs text-zinc-400 leading-relaxed">
+            Financial contributions directly fund non-profit open standards research, testbed infrastructure, and developer grants with transparent on-chain/public accounting.
+          </p>
+        </div>
+        <Link
+          href="/support"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded bg-zinc-800 border border-zinc-700 text-zinc-200 hover:bg-zinc-700 hover:text-white text-xs font-mono whitespace-nowrap transition-colors"
+        >
+          <span>Support AFN</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
+      </div>
+
+      {/* 4. GitHub Issue Submission Template */}
       <div className="border border-zinc-800 bg-zinc-950/80 rounded-xl p-6 md:p-8 space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-800 pb-4">
           <div>
@@ -167,7 +200,7 @@ export default function JoinPage() {
         </div>
       </div>
 
-      {/* 4. Direct Communication Channel */}
+      {/* 5. Direct Communication Channel */}
       <div className="border border-zinc-800 bg-zinc-900/40 rounded-lg p-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs">
         <div className="flex items-center gap-3 text-zinc-300">
           <Mail className="w-4 h-4 text-zinc-400" />

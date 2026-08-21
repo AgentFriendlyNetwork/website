@@ -95,6 +95,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/support" className="hover:text-zinc-200 transition-colors">
+                  Support AFN (Sustainability)
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://github.com/Agent-Friendly-Network"
                   target="_blank"
