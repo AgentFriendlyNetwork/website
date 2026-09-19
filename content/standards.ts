@@ -111,6 +111,42 @@ export const STANDARDS: StandardRFC[] = [
     docUrl: "/docs/spec/AFN-005-Data-Friendly.md",
   },
   {
+    id: "afn-006-acp",
+    code: "AFN-006",
+    title: "Agent Communication Protocol (ACP 2.0) Specification",
+    stage: "DRAFT",
+    category: "INTEROP",
+    workingGroup: "WG-Agent Protocols & Settlement",
+    lastUpdated: "2026-09-02",
+    abstract:
+      "Defines structured task dispatch, execution lifecycle management, and economic escrow settlement between Clients, Gateways, and Agent Services.",
+    keyPoints: [
+      "Authoritative task-layer protocol superseding AFN-002 transport abstractions",
+      "Standard lifecycle state machine: created -> pending_escrow -> running -> delivered -> settled",
+      "Cryptographic request envelopes with idempotency tokens and token budgeting",
+      "Deterministic dispute arbitration interfaces and per-result pricing support",
+    ],
+    docUrl: "/docs/spec/AFN-006-ACP-2.0.md",
+  },
+  {
+    id: "afn-007-reputation",
+    code: "AFN-007",
+    title: "Agent Work Provenance and Reputation Attestation Specification",
+    stage: "DRAFT",
+    category: "DATA",
+    workingGroup: "WG-Reputation & Attestation",
+    lastUpdated: "2026-09-14",
+    abstract:
+      "Defines verifiable acceptance receipts and cryptographic work provenance attestations for agent deliverables, preventing Sybil reputation inflation.",
+    keyPoints: [
+      "Cryptographically signed AcceptanceReceipt primitives binding client, agent, and deliverable SHA-256 hashes",
+      "Mathematical multi-factor reputation scoring (completion rate, accuracy, repeat hire)",
+      "Automated provenance ledger integration for agent marketplaces",
+      "Sybil resistance through verified financial escrow settlement proof",
+    ],
+    docUrl: "/docs/spec/AFN-007-Reputation-Provenance.md",
+  },
+  {
     id: "afx-ref-001",
     code: "AFX-CORE",
     title: "Agent-Friendly Interface Standard Reference (AFX)",
@@ -168,5 +204,21 @@ export const WORKING_GROUPS: WorkingGroup[] = [
       "Defining machine-readable dataset packaging, semantic chunking, and JSON-LD entity linking standards.",
     lead: "AFN Technical Steering Committee",
     rfcs: ["AFN-005"],
+  },
+  {
+    id: "wg-protocols",
+    name: "Agent Protocols & Settlement Working Group",
+    charter:
+      "Formulating structured task dispatch, execution lifecycles, and economic escrow settlement standards across agent networks.",
+    lead: "AFN Technical Steering Committee",
+    rfcs: ["AFN-006"],
+  },
+  {
+    id: "wg-reputation",
+    name: "Reputation & Attestation Working Group",
+    charter:
+      "Establishing cryptographic work receipts, deliverable provenance, and verifiable trust metrics for autonomous agents.",
+    lead: "AFN Technical Steering Committee",
+    rfcs: ["AFN-007"],
   },
 ];

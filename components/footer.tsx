@@ -33,17 +33,22 @@ export function Footer() {
             <ul className="space-y-1.5 font-mono text-[11px]">
               <li>
                 <Link href="/standards" className="hover:text-zinc-200 transition-colors">
-                  AFN-CLI-001 (CLI Standard)
+                  AFN-001 (CLI Standard)
                 </Link>
               </li>
               <li>
                 <Link href="/standards" className="hover:text-zinc-200 transition-colors">
-                  AFN-API-001 (API Contracts)
+                  AFN-002 (API Contracts)
                 </Link>
               </li>
               <li>
                 <Link href="/standards" className="hover:text-zinc-200 transition-colors">
-                  AFN-WEB-001 (agent.json Protocol)
+                  AFN-006 (ACP 2.0 Protocol)
+                </Link>
+              </li>
+              <li>
+                <Link href="/standards" className="hover:text-zinc-200 transition-colors">
+                  AFN-007 (Reputation Attestation)
                 </Link>
               </li>
               <li>
@@ -60,6 +65,11 @@ export function Footer() {
               Ecosystem
             </div>
             <ul className="space-y-1.5 font-mono text-[11px]">
+              <li>
+                <Link href="/reputation" className="hover:text-zinc-200 transition-colors">
+                  Reputation Explorer
+                </Link>
+              </li>
               <li>
                 <Link href="/projects" className="hover:text-zinc-200 transition-colors">
                   OpenCLI Runtime

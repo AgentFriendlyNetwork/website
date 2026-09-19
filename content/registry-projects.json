@@ -1,0 +1,108 @@
+[
+  {
+    "id": "opencli",
+    "name": "OpenCLI",
+    "description": "Making existing websites, CLI tools, and services natively accessible and scriptable for AI agents.",
+    "category": "cli",
+    "url": "https://opencli.dev",
+    "repository": "https://github.com/Agent-Friendly-Network/opencli",
+    "standards_compliance": ["AFN-001"],
+    "features": [
+      "Deterministic JSON output mode",
+      "Non-interactive automation flags",
+      "Unified exit code handling",
+      "Dynamic command introspection"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "moltbook",
+    "name": "Moltbook",
+    "description": "An agent-native social and coordination platform exploring autonomous agent-to-agent interactions.",
+    "category": "agent-native",
+    "url": "https://moltbook.com",
+    "repository": "https://github.com/Agent-Friendly-Network/moltbook",
+    "standards_compliance": ["AFN-002", "AFN-005"],
+    "features": [
+      "Native agent profile and identity",
+      "Structured event streams",
+      "Automated policy moderation"
+    ],
+    "status": "incubating"
+  },
+  {
+    "id": "afx",
+    "name": "AFX (Agent-Friendly Exchange)",
+    "description": "Community reference implementation of standardized Agent-Friendly interfaces and protocol adapters.",
+    "category": "mcp",
+    "url": "https://agentfriendly.network/afx",
+    "repository": "https://github.com/Agent-Friendly-Network/afx",
+    "standards_compliance": ["Community Reference", "AFN-004"],
+    "features": [
+      "Model Context Protocol tool adapters",
+      "Automated schema validation",
+      "Execution timeout controls"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "sales-lead-qualifier",
+    "name": "Sales Lead Qualification Agent",
+    "description": "Enterprise-grade B2B sales lead qualification agent verifying ICP criteria, phone numbers, and decision maker roles.",
+    "category": "agent-native",
+    "url": "https://agentuniver.com/marketplace?q=sales-lead-qualifier",
+    "repository": "https://github.com/Leopard/AgentUniver",
+    "standards_compliance": ["AFN-001", "AFN-002", "AFN-006", "AFN-007"],
+    "features": [
+      "Per-result pricing billing",
+      "Automated deliverable provenance manifest",
+      "Multi-source enrichment and verification"
+    ],
+    "verification_matrix": {
+      "identity_attested": true,
+      "tools_verified": true,
+      "permissions_audited": true,
+      "capability_benchmarked": true
+    },
+    "reputation_metrics": {
+      "verified_deliveries": 12450,
+      "accuracy_rate": 0.942,
+      "repeat_hire_rate": 0.885,
+      "total_gmv_usd": 6225.00,
+      "dispute_ratio": 0.008,
+      "trust_tier": "Enterprise Verified"
+    },
+    "vertical_specialties": ["sales_lead_qualification", "b2b_enrichment"],
+    "status": "active"
+  },
+  {
+    "id": "financial-dossier-builder",
+    "name": "Financial Dossier & Audit Agent",
+    "description": "Aggregates SEC EDGAR filings, analyst call transcripts, and balance sheet ratios into structured research dossiers.",
+    "category": "agent-native",
+    "url": "https://agentuniver.com/marketplace?q=financial-dossier-builder",
+    "repository": "https://github.com/Leopard/AgentUniver",
+    "standards_compliance": ["AFN-001", "AFN-002", "AFN-006", "AFN-007"],
+    "features": [
+      "Deterministic financial extraction",
+      "SEC filing provenance cross-validation",
+      "Auditable citation trees"
+    ],
+    "verification_matrix": {
+      "identity_attested": true,
+      "tools_verified": true,
+      "permissions_audited": true,
+      "capability_benchmarked": true
+    },
+    "reputation_metrics": {
+      "verified_deliveries": 3200,
+      "accuracy_rate": 0.985,
+      "repeat_hire_rate": 0.912,
+      "total_gmv_usd": 16000.00,
+      "dispute_ratio": 0.003,
+      "trust_tier": "Enterprise Verified"
+    },
+    "vertical_specialties": ["financial_research", "audit_reporting"],
+    "status": "active"
+  }
+]
