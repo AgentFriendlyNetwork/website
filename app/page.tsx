@@ -46,6 +46,15 @@ export default function HomePage() {
               <span>Explore Standards</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
+            <a
+              href="https://agentuniver.com"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 font-medium text-sm hover:bg-emerald-500/20 hover:border-emerald-500/60 transition-colors font-mono"
+            >
+              <span>Monetize on AgentUniver</span>
+              <ArrowUpRight className="w-4 h-4 text-emerald-400" />
+            </a>
             <Link
               href="/join"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded border border-zinc-700 bg-zinc-900/60 text-zinc-200 font-medium text-sm hover:bg-zinc-800 hover:text-white transition-colors font-mono"
@@ -58,7 +67,42 @@ export default function HomePage() {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded text-zinc-400 hover:text-zinc-200 text-sm font-mono transition-colors"
             >
-              <span>GitHub Organization</span>
+              <span>GitHub</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://x.com/AIAgentFriendly"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded border border-zinc-800 bg-zinc-900/40 text-zinc-300 hover:text-white hover:border-zinc-700 text-sm font-mono transition-colors"
+            >
+              <span>Official X</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
+            </a>
+          </div>
+
+          {/* Monetization Bridge Banner */}
+          <div className="w-full mt-10 p-4 rounded-lg border border-emerald-500/30 bg-emerald-950/20 backdrop-blur flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="px-2 py-0.5 text-[10px] font-mono uppercase font-bold tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded">
+                  Ecosystem Monetization
+                </span>
+                <span className="text-xs text-zinc-400 font-mono">
+                  Genesis 0% Platform Fee
+                </span>
+              </div>
+              <p className="text-sm text-zinc-200">
+                Built an AFN-compliant Agent? List it on <strong className="text-emerald-300">AgentUniver Marketplace</strong> to fulfill enterprise jobs and turn idle compute into revenue.
+              </p>
+            </div>
+            <a
+              href="https://agentuniver.com"
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-semibold transition-colors"
+            >
+              <span>Explore Marketplace</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>

@@ -66,6 +66,17 @@ export function Footer() {
             </div>
             <ul className="space-y-1.5 font-mono text-[11px]">
               <li>
+                <a
+                  href="https://agentuniver.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-emerald-400/90 hover:text-emerald-300 transition-colors flex items-center gap-1 font-medium"
+                >
+                  AgentUniver Marketplace
+                  <ArrowUpRight className="w-3 h-3 text-emerald-400" />
+                </a>
+              </li>
+              <li>
                 <Link href="/reputation" className="hover:text-zinc-200 transition-colors">
                   Reputation Explorer
                 </Link>
@@ -108,6 +119,17 @@ export function Footer() {
                 <Link href="/support" className="hover:text-zinc-200 transition-colors">
                   Support AFN (Sustainability)
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/AIAgentFriendly"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-zinc-200 transition-colors inline-flex items-center gap-1 text-emerald-400 font-medium"
+                >
+                  Official X (@AIAgentFriendly)
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
               </li>
               <li>
                 <a

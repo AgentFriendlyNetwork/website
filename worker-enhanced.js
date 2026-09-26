@@ -271,6 +271,10 @@ async function handleRequest(request) {
         <span>AgentUniver Marketplace</span>
         <span>&rarr;</span>
       </a>
+      <a href="https://x.com/AIAgentFriendly" class="link-btn" target="_blank" rel="noreferrer">
+        <span>Official X (@AIAgentFriendly)</span>
+        <span>&rarr;</span>
+      </a>
       <a href="https://github.com/Agent-Friendly-Network" class="link-btn" target="_blank" rel="noreferrer">
         <span>GitHub Organization</span>
         <span>&rarr;</span>
