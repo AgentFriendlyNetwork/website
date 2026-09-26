@@ -58,6 +58,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} dark`}>
+      <head>
+        <script
+          defer
+          src="https://umami.wangteng.tech/script.js"
+          data-website-id="2b6eb8d4-026b-4a99-9c96-17bc86c9d2b0"
+        />
+      </head>
       <body className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col font-sans selection:bg-zinc-800 selection:text-white">
         <Header />
         <main className="flex-1 w-full">{children}</main>
