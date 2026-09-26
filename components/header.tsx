@@ -12,7 +12,6 @@ const NAV_ITEMS = [
   { label: "Reputation", href: "/reputation" },
   { label: "Agent-Native", href: "/agent-native" },
   { label: "Members", href: "/members" },
-  { label: "Join", href: "/join" },
 ];
 
 export function Header() {
@@ -61,6 +60,15 @@ export function Header() {
         {/* Desktop Right CTAs */}
         <div className="hidden md:flex items-center gap-3">
           <a
+            href="https://agentuniver.com"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1 text-xs font-medium px-3 py-1.5 rounded border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-500/60 transition-colors font-mono tracking-tight"
+          >
+            Marketplace
+            <ArrowUpRight className="w-3 h-3" />
+          </a>
+          <a
             href="https://github.com/Agent-Friendly-Network"
             target="_blank"
             rel="noreferrer"
@@ -69,12 +77,6 @@ export function Header() {
             GitHub
             <ArrowUpRight className="w-3 h-3" />
           </a>
-          <Link
-            href="/join"
-            className="text-xs font-medium px-3.5 py-1.5 rounded bg-zinc-100 text-zinc-950 hover:bg-zinc-200 transition-colors font-mono tracking-tight"
-          >
-            Join AFN
-          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -108,6 +110,15 @@ export function Header() {
             ))}
           </div>
           <div className="pt-3 border-t border-zinc-800 flex flex-col gap-2">
+            <a
+              href="https://agentuniver.com"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center gap-1.5 text-xs font-mono text-emerald-300 py-2 border border-emerald-500/40 rounded bg-emerald-500/10"
+            >
+              AgentUniver Marketplace
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
             <a
               href="https://github.com/Agent-Friendly-Network"
               target="_blank"
